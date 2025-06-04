@@ -1,0 +1,71 @@
+
+body{
+  background-color: #80ced6; 
+}
+
+.container{
+  display: grid; /*gjør om til grid*/
+
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr)); /*Repeat er en funksjon som gjør at kommandoen i den gjentas så mange 
+  ganger som er markert i den første verdien, i dette tilfellet så er det auto-fit. Auto-fit er en funksjon som legger til så mange 
+  kolonner som er mulig i et vært øyeblikk, siden dette aldri slutter så fortsetter repeat funksjonen for alltid. Minmax brukes så for 
+  å beskrive for bred vær kolonne skal være, i dette tilfellet så er minimums bredden 400px of maksimum 1fr som skal bety at den tar 
+  over resten av plassen. Samlet så sørger dette for at det legges til så mange kolonner som mulig i grid-en.*/
+  gap: 10px;
+  padding-left:10px;
+  padding-right:10px;
+
+}
+
+.item{
+  
+  background-color:#d5f4e6;
+  border: 3px solid #dbe5e5;
+  text-align: center;
+  border-radius:5px;
+  padding:5px;
+  transition:0.3s ease;
+}
+
+#tittel{
+  text-align: center;
+}
+
+.item img{
+  min-width:175px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  transition: 0.1s ease;
+}
+
+.item img:hover {
+  filter: brightness(110%);
+  scale: 1.05;
+  padding-top:10px;
+}
+
+.item:hover {
+  scale: 1.005;
+}
+
+img {max-width:100%;}
+
+p{
+  font-size:20px;
+}
+
+@media only screen and (max-width: 400px) { /*når skjermen er 400px eller mindre bred gjør det som er innenfor istedenfor*/
+  
+  .container{ /*bytter på verdier til container slik at kolonnene fra før av kan bli mindre enn 400px bred*/
+    display: flex;
+    flex-wrap:wrap;
+    min-width:175px;
+    gap: 10px;
+    padding-left:10px;
+    padding-right:10px;
+    
+  }
+}

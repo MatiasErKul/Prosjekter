@@ -1,0 +1,21 @@
+/* Stiler tabellen, velger font-familie og sørger for at kantlinjer smelter sammen */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%; /* Gjør tabellen 100% av tilgjengelig bredde */
+}
+
+/* Stiler cellene i tabellen, både data-celler (td) og overskrifter (th) */
+td, th {
+    border: 1px solid #dddddd; /* Legger til en lys grå kantlinje */
+    text-align: left; /* Justerer teksten til venstre */
+    padding: 8px; /* Legger til 8 piksler med luft rundt teksten */
+}
+
+/* Stiler hver andre rad i tabellen med en lys grå bakgrunnsfarge for å skille dem fra hverandre */
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* Når brukeren holder musepekeren over en tabellrad (<tr>), endres bakgrunnsfargen til lys blå  */
+tr:hover {background-color: #D6EEEE;}
