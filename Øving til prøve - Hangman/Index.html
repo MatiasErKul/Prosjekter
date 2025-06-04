@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div id="spillTittel">
+        <h1>Hangman</h1>
+    </div>  
+    <div id="løsning">
+        <input type="text" id="løsningInput" placeholder="gjetteord...">
+        <button id="btn" onclick="løsningInput()">Godta</button>
+    </div>
+    <div id="spillSlutt">
+        
+    </div>
+    <div id="gjettefelt">
+        <input type="text" id="gjett" placeholder="gjett...">
+        <button id="btn" onclick="button()">Godta</button>
+        
+        <div id="ordLengde">
+            <!--Relevant info displays here-->
+        </div>
+        <div id="riktigeBokstaver">
+            <!--Relevant info displays here-->
+        </div>
+        <div id="gjettedeBokstaver">
+            <!--Relevant info displays here-->
+        </div>
+        <div id="totaltGjettede">
+            <!--Relevant info displays here-->
+        </div>
+        <div id="mistakeCounter">
+            
+        </div>
+    </div> 
+    <button id="reset" onclick="reset()">reset</button>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klassefest</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header id="stickyHeader">
+        <input type="text" id="searchBar" placeholder="Søk..." />
+        <button id="meldPå">Meld på</button>
+        <button id="sePåmeldte">Se Påmeldte</button>
+        <button id="redigerElev" disabled>Rediger</button>
+        <button id="deleteButton" disabled>Slett</button>
+    </header>
+    <div id="tittel">
+        <h1></h1>
+    </div>
+    
+    <div id="hovedContainer">
+        <div id="statsBar">
+            <h3>Statistikk</h3>
+            <p id="totalElever">Totalt antall elever: 0</p>
+            <h4>Vanligste klasser:</h4>
+            <ul id="mostCommonKlasser">
+                <!-- Klassenavn og antall vil bli vist her -->
+            </ul>
+        </div>
+        <form id="skjema">
+            <div class="skjemaKomponenter">
+                <p>Elevnummer</p>
+                <input type="text" id="elevnummer" placeholder="Elevnummer" required />
+            </div>
+            <div class="skjemaKomponenter">
+                <p>Navn</p>
+                <input type="text" id="navn" placeholder="Navn på elev" required />
+            </div>
+            <div class="skjemaKomponenter">
+                <p>Klasse</p>
+                <input type="text" id="klasse" placeholder="Klasse" required />
+            </div>
+            <div class="skjemaKomponenter">
+                <button type="submit" id="meldElev">Meld deg på</button>
+            </div>
+        </form>
+        
+        <div id ="visTabell">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Elevnummer</th>
+                        <th>Navn</th>
+                        <th>Klasse</th>
+                    </tr>
+                </thead>
+                <tbody id="liste">
+                    <!-- Elevene vil bli vist her -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="module" src="main_DB_rammeverk.js"></script>
+    
+</body>
+</html>

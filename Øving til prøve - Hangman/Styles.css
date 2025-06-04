@@ -1,0 +1,23 @@
+#spillSlutt{
+    background-color: whitesmoke;
+    width:150px;
+    border-color:black;
+    border-width: 2px;
+}
+
+#mistakeCounter{
+    width:150px;
+    background-color:red;
+}
+
+#løsningInput{
+    width:150px;
+    background-color:greenyellow;
+    color:black;
+    margin-bottom:10px;
+}
+
+#reset{
+    background-color:blue;
+    width:150px;
+}

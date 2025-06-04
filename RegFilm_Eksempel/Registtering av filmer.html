@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="no"><head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Regfilm.css">
+        <title>Filmregistrering</title>
+    </head>
+
+    <body>
+        <div class="hoved">
+          <div class="block">
+            <h1> Registrer film </h1>
+            
+            <label for="tittel">Tittel</label>
+            <input type="text" id="tittel" placeholder="Titanic">
+          
+            <label for="beskrivelse">Beskrivelse</label>
+            <textarea id="beskrivelse" placeholder="Skriv en kort beskrivelse av filmen"></textarea>
+          
+            <label for="aarstall">Årstall</label>
+            <input type="number" id="aarstall" placeholder="1997">
+          
+            <label for="aldersgrense">Aldersgrense</label>
+            <select id="aldersgrense">
+              <option value="alle">Tillatt for alle</option>
+              <option value="syv">7 år</option>
+              <option value="elleve">11 år</option>
+              <option value="femten">15 år</option>
+              <option value="atten">18 år</option>
+            </select>
+          </div>
+          <div class="inline">
+            <label for="format">Format</label>
+            <form id="format">
+              <div>
+                <input type="checkbox" id="kino" class="option">
+                <label for="kino">Kino</label>
+              </div>
+              <div>
+                <input type="checkbox" id="DVD" class="option">
+                <label for="DVD">DVD</label>
+              </div>
+              <div>
+                <input type="checkbox" id="strømmetjeneste" class="option">
+                <label for="strømmetjeneste">Strømmetjeneste</label>
+              </div>
+              <div>
+                <input type="checkbox" id="tv" class="option">
+                <label for="tv">TV</label>
+              </div>
+            </form>
+
+            <label for="oscar">Fått Oscar?</label>
+            <div id="oscar">
+              <div>
+                <input type="radio" id="ja" placeholder="Ja" name="oscar" class="option">
+                <label for="ja">Ja</label>
+              </div>
+              <div>
+                <input type="radio" id="nei" placeholder="Nei" name="oscar" class="option">
+                <label for="nei">Nei</label>
+              </div>
+
+            </div>
+            
+            <button id="registrer_knapp">Registrer</button>
+          </div>
+          <table id="film_tabell">
+            <thead>
+                <tr>
+                    <th>Tittel</th>
+                    <th>Beskrivelse</th>
+                    <th>Årstall</th>
+                    <th>Aldersgrense</th>
+                    <th>Format</th>
+                    <th>Fått Oscars?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Her går filminformasjonen-->
+            </tbody>
+          </table>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+
+
+</html>

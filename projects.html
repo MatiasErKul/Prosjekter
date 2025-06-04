@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <ul>  
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="about.html">Om meg</a></li>
+        <li><a href="projects.html">Prosjekter</a></li>
+        <li><a href="contact.html">Kontakt meg</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="title">
+      <h1>Mine prosjekter</h1>
+    </div>
+    <div class="project-list">
+      <div class="project">
+        <a onclick="openProjectModal('/Øving til prøve - Hangman/Index.html'); return false;">
+            <img src="Hangman.png" alt="Hangman nettside" />
+        </a>
+        <div class="project-text">
+          <h3>Hangman</h3>
+          <p>Jeg lagde en nettside der man kan spille hangman. Bare få noen til å sette inn et ord så kan du prøve å gjette det.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a onclick="openProjectModal('/Gridbox bilder/Gridbox.html'); return false;">
+          <img src="Gridbox.png" alt="Bilde av gridbox nettsiden" />
+        </a>
+        <div class="project-text">
+          <h3>Gridbox bilder</h3>
+          <p>Denne nettsiden viser bilder på en veldig brukervenlig måte ved å organisere dem ved hjelp av CSS gridbox.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a onclick="openProjectModal('/Nettbutikk _ komme i gang/nettutikk_forslag.html'); return false;">
+          <img src="Nettbutikk.png" alt="Nettbutikk" />
+        </a>
+        <div class="project-text">
+          <h3>Nettbutikk</h3>
+          <p>På denne nettsiden kan man legge til fem forskjellige produkter i en handlekurv. Handlekurven viser hvilke og hvor mange du har lagt til av enhver produkt.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a onclick="openProjectModal('/Timeplan/index.html'); return false;">
+          <img src="Skoletimeplan.png" alt="Skoletimeplan" />
+        </a>
+        <div class="project-text">
+          <h3>Timeplan</h3>
+          <p>Dette var for å øve på å lage tabeller med css. Her så har jeg laget en skoletimeplan.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a onclick="openProjectModal('/EgenNettside - Matias Videla/Nettside 1.html'); return false;">
+          <img src="Skolenettside.png" alt="fiktiv skolenettside" />
+        </a>
+        <div class="project-text">
+          <h3>Hvitingsfoss skolenettside</h3>
+          <p>Dette er min første nettside. Den ser litt gammel ut og er en nettside for en fiktiv skole.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a onclick="openProjectModal('/RegFilm_Eksempel/Registtering av filmer.html'); return false;">
+          <img src="Registrer.png" alt="Nettside for å registrere filmer" />
+        </a>
+        <div class="project-text">
+          <h3>Registrering av filmer</h3>
+          <p>Her så kan du registrere ulike filmer. Husk at det ikke er noe database, så alt slettes.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a onclick="openProjectModal('/Generelt rammeverk/HTML_struktur_DB.html'); return false;">
+          <img src="Klassefest.png" alt="Project 2" />
+        </a>
+        <div class="project-text">
+          <h3>Klassefest</h3>
+          <p>Denne nettsiden er laget for å organisere samlinger. I dette tilfellet en klassefest. Her så blir elevnummeret, navnet og klassen til alle påmeldte lagret i en database. Nettsiden har også et par andre nyttige og nye ting som en seleksjonsmetode for tabellen. Dette er mitt eget mest utdypet prosjekt.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a onclick="openProjectModal('/Generelt rammeverk/HTML_struktur_DB.html'); return false;">
+          <img src="Steingruppa.png" alt="En nettside for å organisere en database av steiner" />
+        </a>
+        <div class="project-text">
+          <h3>Steingruppa</h3>
+          <p>Denne nettsiden var et gruppeprosjekt med hele klassen. Vi hadde alle vår innsats for å sammensette denne nettsiden. Håpet vårt er at den blir mer finpusset med de kommende kullene. Denne nettsiden funker foresten ikke fra denne nettsiden.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a onclick="openProjectModal('index.html'); return false;">
+          <img src="Personlig.png" alt="Peronsnlig nettside for matias" />
+        </a>
+        <div class="project-text">
+          <h3>Personlig nettside for Matias Videla</h3>
+          <p>En nettside for å presentere Matias Videla og sine prosjekter.</p>
+        </div>
+      </div>
+    </div>
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <iframe id="projectFrame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Matias Videla. Alle rettigheter reservert.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

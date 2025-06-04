@@ -1,0 +1,165 @@
+body{
+  width: 100%; /*lager noen parametere og pynter hele nettsiden*/
+  height: 100vh;
+  border-collapse:collapse;
+  margin: 0; 
+  padding: 0;
+  background-color: #a2b9bc;
+}
+#title{
+  padding-left:5px; /* pynter titelen til hele nettsiden*/
+  font-family: verdana, sans-serif;
+}
+    
+.buttons{ /* samler undersidene på toppen av nettsiden inn i en flexbox og gjør slik at alle blir like store*/
+  flex:1;
+  background-color: #6b5b95;
+  margin:0;
+  padding: 10px;
+  /*position: fixed;*/
+  width:100%;
+}
+
+.buttons:hover{
+  filter: brightness(1.25);
+} /* når musa er over en knappene så blir knappen lysere*/
+
+
+.wrapcontainer { /*for å samle flexbox elementer*/
+  border-collapse:collapse;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.buttonscontainer { /*for å samle flexbox elementer*/
+  border-collapse:collapse;
+  display: flex; 
+  flex-direction: row;
+}
+.container { /*for å samle flexbox elementer*/
+  border-collapse:collapse;
+  display: flex; 
+  flex-direction: row;
+}
+.fyll{ /*brukes for å fylle ut tomrom under et element*/
+  border-collapse:collapse;
+  display: flex; 
+  flex-direction: column;
+  
+}
+.vekst {
+  flex-grow: 1; /*jobber med .fyll og fyller inn tomrom under elementer*/
+}
+
+.historien{
+  flex:1; /*Brukt for å pynte "historien vår" delen av nettsiden*/
+  border-collapse:collapse;
+  flex-basis: 40%;
+  padding-left:5px;
+  padding-right:5px;
+  padding-bottom:5px;
+  background-color: #b2ad7f;
+  font-size:18px;
+  
+}
+
+img {max-width:100%;}/*gjør slik at ingen bilder kan bli større en hundre prosent av skjermen, dermed så må bildene bli mindre*/
+
+.skolen {
+  border-collapse:collapse;/*sørger for at det ikke er tomrom rundt bildet*/
+  background-color: #b2ad7f;
+  flex:1 1 auto;
+  height: auto;
+  object-fit: cover;
+  
+}
+.personalet {
+  margin-top: 0px; /*pynter personaelet delen av nettsiden*/
+  flex:1 1 auto;
+  min-width:250px;
+  flex-basis:25%;
+  border-collapse:collapse;
+  background-color: #878f99; 
+  float:right;
+  justify-content:right;
+  
+}
+#hovedtekst{
+  
+  /*pynter om oss delen av nettsiden*/
+  padding-left:5px;
+  padding-right:5px;
+  background-color:#a2b9bc;
+  
+  border-collapse:collapse;
+  margin-bottom: auto;
+  font-size:16px;
+  min-width:350px;
+  justify-content:left;
+  
+}
+
+#overtekstpersonalet{/*gjør at teksten over tabelen blir sentralisert*/
+  text-align:center; 
+}
+
+table {
+  
+  width:100%;
+  border-collapse:collapse; /* Sørger for at grensene mellom celler er smeltet sammen */
+  font-family: Arial, sans-serif;
+ 
+  
+  
+}
+
+th, td {
+  padding: 8px;  /*økt padding for bedre lesbarhet */
+  text-align: left;  /*justerer teksten til venstre */
+  
+}
+
+th {
+  background-color: #e7e7e7; /* lys grå bakgrunn for tabell overskrifter */
+  font-weight: bold; 
+  
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9; /*gjør slik at par tall antall radene i tabellen har en annerledes farge en bakgrunnfargen til hvor den er*/
+}
+
+tr:hover {
+  background-color: #c5c5c5; /*endrer fargen til raden man har musen over i tabellen*/
+}
+
+caption { /*gir noen egenskaper til captionen til tabelen, det er som tittelen til tabelen*/
+  font-size: 1.5em; 
+  margin: 10px 0; 
+  font-weight: bold;
+}
+
+
+
+.skjemaet { /*jeg brukte bootstrap for å tenke ut skjemaet*/
+  width: 80%;
+  margin: 0 auto; /*lister ut en del parametere for skjemeat som en helhet*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  
+  
+}
+
+.btn { /*gir egenskaper til knappen "send inn" under skjemaet*/
+  display: block;
+  margin: 1em auto; 
+}
+
+@media only screen and (max-width: 600px) { /*når hovedteksten og teksten om personalet blir bredere en bredden av nettsiden så går de under hverandre*/
+  .container { 
+    border-collapse:collapse;
+    display: flex; 
+    flex-direction: column;
+  }
+  
+}

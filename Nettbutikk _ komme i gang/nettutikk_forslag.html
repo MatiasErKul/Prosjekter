@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nettbutikkstyle.css">
+  <title>Nettbutikk</title>
+</head>
+<body>
+  <div id="products">
+    <!-- Produktene legges til her -->
+    <div class="product">
+      <h3>Produkt 1</h3>
+      <p>Pris: 10kr</p>
+      <button onclick="addToCart('produkt 1')">Legg til i handlekurv</button>
+    </div>
+    <div class="product">
+      <h3>Produkt 2</h3>
+      <p>Pris: 15kr</p>
+      <button onclick="addToCart('produkt 2')">Legg til i handlekurv</button>
+      
+    </div>
+    <div class="product">
+      <h3>Produkt 3</h3>
+      <p>Pris: 15kr</p>
+      <button onclick="addToCart('produkt 3')">Legg til i handlekurv</button>
+      
+    </div>
+    <div class="product">
+      <h3>Produkt 4</h3>
+      <p>Pris: 15kr</p>
+      <button onclick="addToCart('produkt 4')">Legg til i handlekurv</button>
+      
+    </div>
+    <div class="product">
+      <h3>Produkt 5</h3>
+      <p>Pris: 15kr</p>
+      <button onclick="addToCart('produkt 5')">Legg til i handlekurv</button>
+      
+    </div>
+    <!-- Legg til flere produkter etter behov -->
+  </div>
+
+  <div id="cart" class="cart">
+    <h2>Handlekurv</h2>
+    <ul id="cart-items"></ul>
+    <button onclick="clearCart()">Tilbakestill handlekurv</button>
+  </div>
+
+  <script src="nettbutikk.js"></script>
+</body>
+</html>
